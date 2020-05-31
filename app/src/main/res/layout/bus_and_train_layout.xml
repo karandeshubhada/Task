@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp"
+    android:background="@android:color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bus Info"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bus_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEL"
+                    android:textSize="12sp"
+                    android:textColor="@color/light_red"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_arrow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/bus_from"
+                    android:layout_toRightOf="@+id/bus_from"
+                    android:drawableStart="@drawable/ic_action_transfer"
+                    android:drawableLeft="@drawable/ic_action_transfer"
+                    android:textColor="@color/light_red"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/bus_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEL"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/tv_arrow1"
+                    android:textColor="@color/light_red"
+                    android:layout_toRightOf="@+id/tv_arrow1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/bus_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 hours"
+                    android:layout_toEndOf="@id/bus_to"
+                    android:layout_marginStart="10dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/bus_fromTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:20-10:25"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/quantum_black_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Train Info"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/train_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEL"
+                    android:textSize="12sp"
+                    android:textColor="@color/light_red"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/train_from"
+                    android:layout_toRightOf="@+id/train_from"
+                    android:drawableStart="@drawable/ic_action_transfer"
+                    android:drawableLeft="@drawable/ic_action_transfer"
+                    android:textColor="@color/light_red"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/train_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEL"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/tv_arrow"
+                    android:textColor="@color/light_red"
+                    android:layout_toRightOf="@+id/tv_arrow"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/train_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 hours"
+                    android:layout_toEndOf="@id/train_to"
+                    android:layout_marginStart="10dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/train_fromTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:20-10:25"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/quantum_black_text" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

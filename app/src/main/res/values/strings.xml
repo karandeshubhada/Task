@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MentoraTask</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Phone</string>
+    <string name="slide_1_desc">Big discounts on Smart Phones</string>
+
+    <string name="slide_2_title">Flight</string>
+    <string name="slide_2_desc">Upto 25% off on Domestic Flights</string>
+
+    <string name="slide_3_title">Bus</string>
+    <string name="slide_3_desc">Enjoy Travelling on bus with flat 100 off</string>
+
+    <string name="slide_4_title">Train</string>
+    <string name="slide_4_desc">10% cashback on first train booking</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>

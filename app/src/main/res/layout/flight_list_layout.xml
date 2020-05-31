@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="3dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/airplane_flight_sunset" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/rl_imageView"
+            android:layout_toRightOf="@+id/rl_imageView"
+            android:orientation="vertical"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEL"
+                    android:textSize="12sp"
+                    android:textColor="@color/light_red"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv_from"
+                    android:layout_toRightOf="@+id/tv_from"
+                    android:drawableStart="@drawable/ic_action_transfer"
+                    android:drawableLeft="@drawable/ic_action_transfer"
+                    android:textColor="@color/light_red"
+                    android:paddingStart="3dp"
+                    android:paddingEnd="3dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEL"
+                    android:textSize="12sp"
+                    android:layout_toEndOf="@+id/tv_arrow"
+                    android:textColor="@color/light_red"
+                    android:layout_toRightOf="@+id/tv_arrow"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_fromTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:20-10:25"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/quantum_black_text" />
+
+            <TextView
+                android:id="@+id/tv_toTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:20-10:25"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/quantum_black_text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/tv_direct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="1dp"
+                android:text="DIRECT"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:text="STOPS 1 hr 15 mins"
+                android:textColor="@color/md_yellow_800"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_guj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="1dp"
+                android:text="GUJ"
+                android:textColor="@color/quantum_black_text"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_fTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="1dp"
+                android:text="1 hr 30 mins"
+                android:textColor="@color/quantum_black_text"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_tTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="1dp"
+                android:text="1 hr 25 mins"
+                android:textSize="12sp"
+                android:textColor="@color/quantum_black_text"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="1dp"
+                android:text="Rs.25073"
+                android:textSize="12sp"
+                android:textColor="@color/light_red"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
